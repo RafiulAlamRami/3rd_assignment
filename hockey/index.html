@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/28391e9af9.js" crossorigin="anonymous"></script>
+    <!-- tailwind and daisyui cdn link -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fomts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-color': '#FF4240',
+                b:'rgba(231, 111, 81,.10)',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- custom css style -->
+    <style>
+        .font-monarope{font-size: monarope;}
+        .widt{
+          width: 90%;
+          margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="widt">
+
+      <!-- Header section start -->
+
+    <nav class="sm:container sm:mx-auto font-monarope">
+      <div class="navbar bg-base-100 justify-between">
+          <div class="navbar-start w-auto ">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Page</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+                
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-[#131318] font-bold text-xl lg:text-4xl">Hockey's</a>
+          </div>
+          <div class="navbar-center hidden flex lg:flex justify-between w-[70%]">
+            <div class="ml-[150px]">
+              <ul class="menu menu-horizontal px-1">
+                  <li><a class="text-btn-color text-base font-bold">Home</a></li>
+                    <li><a class="text-base font-bold">About</a></li>
+                    <li><a class="text-base font-bold">Page</a></li>
+                    <li><a class="text-base font-bold">Blog</a></li>
+                    <li><a class="text-base font-bold">Contact</a></li>
+                </ul>
+            </div>
+            <div class="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            </div>
+          </div>
+          <div class="navbar-end w-auto">
+              
+            <a class="bg-btn-color btn text-white">Get Ticket</a>
+          </div>
+        </div>
+  </nav>
+
+  <!-- ------------------------------------------------- -->
+   
+
+  <!-- Header section End -->
+
+      <!-- carosol start -->
+      <div class="w-90% mx-auto mb-[50px]">
+        <div class="carousel w-full h-auto ">
+            <!-- slider 1 start -->
+            <div id="slide1" class="flex flex-col md:flex-row carousel-item relative w-full">
+                <div class="w-full relative">
+                  <div class="absolute bg-[#131318] text-white lg:p-8 sm:p-4 p-2 rounded-2xl lg:bottom-[10px] lg:right-[10px] sm:bottom-[-50px] sm:right-[50px] bottom-[-150px] right-[50px]">
+                    <h1 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+                    <p class="text-base fond-medium w-[31rem]">Star Sports is sports news related pages of the leading Bangladesh Newspaper The Daily Star.  </p>
+                  </div>
+                    <div class="">
+                      <img src="./Images/1.png" class="w-full h-[500px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2  lg:bottom-1 lg:left-5 sm:bottom-[70px] sm:left-[250px] bottom-[30px] left-[250px] gap-2">
+                  <a href="#slide3" class="btn btn-circle border-[#131318]  bg-[#131318] text-white">❮</a> 
+                  <a href="#slide2" class="btn btn-circle border-[#131318]  bg-[#131318] text-white">❯</a>
+                </div>
+                
+            </div> 
+            <!-- slider 1 End -->
+            <!-- slider 2 start -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <div class="w-full relative">
+                <div class="absolute bg-[#131318] text-white lg:p-8 sm:p-4 p-2 rounded-2xl lg:bottom-[10px] lg:right-[10px] sm:bottom-[-50px] sm:right-[50px] bottom-[-150px] right-[50px]">
+                  <h1 class="text-2xl font-extrabold text-white">Hello all the heroes from the field</h1>
+                  <p class="text-base fond-medium w-[31rem]">DStar Sports is sports news related pages of the leading Bangladesh Newspaper The Daily Star. </p>
+                </div>
+                  <div>
+                    <img src="./Images/2.png" class="w-full h-[500px]" />
+                  </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2  lg:bottom-1 lg:left-5 sm:bottom-[70px] sm:left-[250px] bottom-[30px] left-[250px] gap-2">
+                <a href="#slide1" class="btn btn-circle border-[#131318]  bg-[#131318] text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle border-[#131318]  bg-[#131318] text-white">❯</a>
+              </div>
+            </div> 
+            <!-- slider 2 end -->
+            <!-- slider 3 start -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <div class="w-full relative">
+                <div class="absolute bg-[#131318] text-white lg:p-8 sm:p-4 p-2 rounded-2xl lg:bottom-[10px] lg:right-[10px] sm:bottom-[-50px] sm:right-[50px] bottom-[-150px] right-[50px]">
+                  <h1 class="text-2xl font-extrabold text-white">Hi all the heroes from the field</h1>
+                  <p class="text-base fond-medium w-[31rem]">DStar Sports is sports news related pages of the leading Bangladesh Newspaper The Daily Star. </p>
+                </div>
+                  <div>
+                    <img src="./Images/3.png" class="w-full h-[500px]" />
+                  </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2  lg:bottom-1 lg:left-5 sm:bottom-[70px] sm:left-[250px] bottom-[30px] left-[250px] gap-2">
+                <a href="#slide2" class="btn btn-circle border-[#131318]  bg-[#131318] text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle border-[#131318]  bg-[#131318] text-white">❯</a>
+              </div>
+            </div> 
+            <!-- slider 3 end -->
+            
+        </div>
+             
+      </div>
+  <!-- carosol end -->
+
+  <!-- progress start -->
+
+    <div class="w-90% mx-auto space-y-10 mb-[50px]">
+      <!-- content -->
+      <div class=" text-center space-y-4">
+        <h1 class="text-3xl font-extrabold text-[#131318]">Professional Hockeys Club</h1>
+        <p class="text-[#13131899]">Find breaking news, features and analysis on the NFL, NBA, MLB, golf, tennis, soccer, NCAA, NHL, World Series,<br> Super Bowl, Olympics, World Cup and more.</p>
+      </div>
+      <!-- progress -->
+      <div class="flex flex-col sm:flex-row ">
+        <div class="space-y-4 justify-center">
+          <div class="radial-progress text-2xl font-extrabold  text-red-500 text-center w-[120px] h-[120px] ml-[200px] sm:ml-[50px] lg:ml-[50px]" style="--value:87;" role="progressbar">87%</div>
+          <h4 class="text-[#131318] text-center text-lg fomt-semibold">Prayer Facility</h4>
+          <p class="text-[#13131899] text-center font-lg font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="radial-progress text-2xl font-extrabold text-[#49D293] text-center w-[120px] h-[120px] ml-[200px] sm:ml-[50px] lg:ml-[50px" style="--value:95;" role="progressbar">95%</div>
+          <h4 class="text-[#131318] text-center text-lg fomt-semibold">Prayer Facility</h4>
+          <p class="text-[#13131899] text-center font-lg font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="radial-progress text-2xl font-extrabold  text-[#FF4500] text-center w-[120px] h-[120px] ml-[200px] sm:ml-[50px] lg:ml-[50px" style="--value:90;" role="progressbar">90%</div>
+          <h4 class="text-[#131318] text-center text-lg fomt-semibold">Prayer Facility</h4>
+          <p class="text-[#13131899] text-center font-lg font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="radial-progress text-2xl font-extrabold  text-[#4C8DF1] text-center w-[120px] h-[120px] ml-[200px] sm:ml-[50px] lg:ml-[50px" style="--value:80;" role="progressbar">80%</div>
+          <h4 class="text-[#131318] text-center text-lg fomt-semibold">Prayer Facility</h4>
+          <p class="text-[#13131899] text-center font-lg font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        
+      </div>
+    </div>
+
+  <!-- progress end -->
+
+  <!-- program section start -->
+
+    <div class="w-90% mx-auto space-y-10 mb-[50px]">
+    <!-- content -->
+    <div class=" text-center space-y-4">
+      <h1 class="text-3xl font-extrabold text-[#131318]">Program Sections</h1>
+      <p class="text-[#13131899]">Find breaking news, features and analysis on the NFL, NBA, MLB, golf, tennis, soccer, NCAA, NHL, World Series,<br> Super Bowl, Olympics, World Cup and more.</p>
+    </div>
+
+    <!-- image start -->
+    <div>
+      <div class="flex flex-col sm:flex-row md:flex-row lg:flex-row gap-2">
+        <div class="h-[21.125rem] w-[35.813rem] rounded-xl bg-[url('./Images/2.png')] bg-center bg-cover ">
+          <div class="h-[21.125rem] w-[35.813rem] ">
+            <div class="p-16 mt-7 space-y-3 ">
+              <h1 class="text-white text-2xl font-extrabold">Junior Program</h1>
+              <p class="text-white text-base font-medium">Find breaking news, features and analysis on the NFL, NBA, MLB, golf, tennis, soccer, NCAA, NHL, World Series,Super Bowl, Olympics, World Cup and more.</p>
+              <button class="btn bg-[#FF4240] border-[#FF4240]  text-white">Register Now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="h-[21.125rem] w-[35.75rem] rounded-xl bg-[url('./Images/3.png')] bg-center bg-cover">
+          <div class="h-[21.125rem] w-[35.75rem] ">
+            <div class="p-16 mt-7 space-y-3 ">
+              <h1 class="text-white text-2xl font-extrabold">Junior Program</h1>
+              <p class="text-white text-base font-medium">Find breaking news, features and analysis on the NFL, NBA, MLB, golf, tennis, soccer, NCAA, NHL, World Series,Super Bowl, Olympics, World Cup and more.</p>
+              <button class="btn bg-[#FF4240] border-[#FF4240]  text-white">Register Now</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[21.125rem]  rounded-xl bg-[url('./Images/4.png')] bg-center bg-cover mt-[-20px]">
+        <div class="h-[21.125rem] w-[35.75rem] ">
+          <div class="p-16 mt-7 space-y-3 ">
+            <h1 class="text-white text-2xl font-extrabold">Junior Program</h1>
+            <p class="text-white text-base font-medium">Find breaking news, features and analysis on the NFL, NBA, MLB, golf, tennis, soccer, NCAA, NHL, World Series,Super Bowl, Olympics, World Cup and more.</p>
+            <button class="btn bg-[#FF4240] border-[#FF4240] text-white">Register Now</button>
+          </div>
+
+        </div>
+      </div>
+      
+        
+    </div>
+    <!-- image end -->
+    
+    </div>
+
+  <!-- program section end -->
+
+  <!-- product section start -->
+    <div class=" text-center space-y-4">
+      <h1 class="text-3xl font-extrabold text-[#131318]">Our New Products</h1>
+      <p class="text-[#13131899]">Find breaking news, features and analysis on the NFL, NBA, MLB, golf, tennis, soccer, NCAA, NHL, World Series,<br> Super Bowl, Olympics, World Cup and more.</p>
+    </div>
+    <div>
+      <!-- baki ache ekhane -->
+    </div>
+  <!-- product section end -->
+
+  <!-- FAQ Start -->
+
+    <div> <!-- FAQ main div -->
+
+      <div> <!-- FAQ content div -->
+        <div class=" text-center space-y-4 mt-7 mb-7">
+          <h1 class="text-3xl font-extrabold text-[#131318]">Clients Question</h1>
+          <p class="text-[#13131899]">Find breaking news, features and analysis on the NFL, NBA, MLB, golf, tennis, soccer, NCAA, NHL, World Series,<br> Super Bowl, Olympics, World Cup and more.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row md:flex-row"> <!-- accordion main div -->
+
+        <div class="flex-1 mb-10"> <!-- accordion img div -->
+          <img src="./Images/11.png" alt="" class="">
+        </div>
+
+        <div class="flex-1 mb-10"> <!-- accordion div -->
+
+          <div class="collapse collapse-plus bg-base-200 ">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content"> 
+              <p>training equipment include swiss balls, resistance bands</p>
+            </div>
+          </div>
+          <hr>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Hockey Training
+            </div>
+            <div class="collapse-content"> 
+              <p>HockeyTraining.com we provide players with hockey training </p>
+            </div>
+          </div>
+          <hr>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Private Lessons
+            </div>
+            <div class="collapse-content"> 
+              <p>private sports sessions around Hong Kong. This includes a selection of several sports, </p>
+            </div>
+          </div>
+          <hr>
+          <div class="collapse collapse-plus bg-base-200 ">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Trainner
+            </div>
+            <div class="collapse-content"> 
+              <p>training equipment include swiss balls, resistance bands</p>
+            </div>
+          </div>
+          <hr>
+          <div class="collapse collapse-plus bg-base-200 ">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Ski Touring
+            </div>
+            <div class="collapse-content"> 
+              <p>training equipment include swiss balls, resistance bands</p>
+            </div>
+          </div>
+          <hr>
+          <div class="collapse collapse-plus bg-base-200 ">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Booking
+            </div>
+            <div class="collapse-content"> 
+              <p>training equipment include swiss balls, resistance bands</p>
+            </div>
+          </div>
+          <hr><div class="collapse collapse-plus bg-base-200 ">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Pricings
+            </div>
+            <div class="collapse-content"> 
+              <p>training equipment include swiss balls, resistance bands</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+  <!-- FAQ end -->
+
+  <!-- Get in touch start -->
+
+      <div>  <!-- Get in touch main div -->
+
+        <div class="mb-7"> <!-- Get in touch content div -->
+          <div class=" text-center space-y-4 mt-7 mb-7">
+            <h1 class="text-3xl font-extrabold text-[#131318]">Get In Touch</h1>
+            <p class="text-[#13131899]">We've compiled the best real-life examples of Contact Us pages on the web We've compiled the best <br> real-life examples of Contact Us pages on the web</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row"> <!-- Get in touch Add and subs div-->
+
+          <div class="mb-10"> <!-- Get in touch Add div-->
+            
+            <div class=" mb-10">
+              <img src="./Images/Group 1171275317.png" alt="" class="mb-4">
+              <p class=" mb-4 text-base font-normal text-[#13131866
+              ]">Phone number</p>
+
+              <p class="text-lg font-extrabold text-[#131318
+              ]">(+62) 123-321-543</p>
+
+              
+            </div>
+            <div class="mb-10">
+              <img src="./Images/Group 1171275318.png" alt="" class="mb-4">
+              <p class=" mb-4 text-base font-normal text-[#13131866
+              ]">Email</p>
+
+              <p class="text-lg font-extrabold text-[#131318
+              ]">hockeys@support.com</p>
+
+              
+            </div>
+            <div class=" bg-[#629cf31a]">
+              <img src="./Images/Group 1171275321.png" alt="" class="mb-4">
+              <p class=" mb-4 text-base font-normal text-[#13131866
+              ]">Location : </p>
+
+              <p class="text-lg font-extrabold text-[#131318
+              ]">152/1 Mohakhali Wireless Gate</p>
+
+              
+            </div>
+
+          </div>
+
+          <div class="sm:ml-[9.375rem]"> <!-- Get in touch subs div-->
+
+            <div class="flex gap-2 flex-col sm:flex-row"> <!-- name mail div-->
+
+              <div class=" ">
+                <label for="name" class="text-xl font-bold text-[#131318]">Your Name</label>
+                <input type="text" placeholder="Enter your full name" class="input input-bordered input-primary w-full max-w-xs w-[20.25rem]" />
+              </div>
+
+              <div class=" ">
+                <label for="name" class="text-xl font-bold text-[#131318]">Your Email</label>
+                <input type="text" placeholder="Enter your Email" class="input input-bordered input-primary w-full max-w-xs w-[20.25rem]" />
+              </div>
+
+            </div>
+
+            <div class="flex gap-2 mt-8 flex-col sm:flex-row"> <!-- sub phone div-->
+
+              <div class=" ">
+                <label for="name" class="text-xl font-bold text-[#131318]">Subject</label>
+                <input type="text" placeholder="Enter your subject" class="input input-bordered input-primary w-full max-w-xs w-[20.25rem]" />
+              </div>
+              
+              <div class=" ml-9">
+                <label for="name" class="text-xl font-bold text-[#131318]">Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" class="input input-bordered input-primary w-full max-w-xs w-[20.25rem]" />
+              </div>
+
+            </div>
+
+            <div class=""> <!--  message -->
+              
+              <div class=" mt-9 ml-10 mb-7">
+                <label for="name" class="text-xl font-bold text-[#131318]">Message</label><br>
+                <input type="text" placeholder="Enter your Message" class="input input-bordered input-primary w-full max-w-xs w-[20.25rem] h-[10.25rem]" />
+              </div>
+
+              <button class="btn bg-[#FF4240;] w-[50%] ml-10 text-white">Send Message</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+  <!-- Get in touch end -->
+
+  <!-- Social start -->
+
+      <div class="mb-2">
+        <div class="text-center text-2xl font-extrabold"> <!-- Social content -->
+          <p>Social Media</p>
+        </div>
+
+        <div class="text-center text-2xl font-extrabold"> <!-- Social icon -->
+          <i class="fa-brands fa-twitter"></i>&nbsp&nbsp
+          <i class="fa-brands fa-facebook-f"></i>&nbsp&nbsp
+          <i class="fa-brands fa-square-instagram"></i>&nbsp&nbsp
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+
+  <!-- social End -->
+
+  </div>
+
+  
+    
+</body>
+</html>
